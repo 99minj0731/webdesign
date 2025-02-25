@@ -8,6 +8,29 @@
   <title>CSS 우선순위</title>
   <style>
     /*  도서를 참조하여 완성해보세요 */
+
+    /* 동일한 선택자일 때 밑에 위치한 것이 우선순위가 더 높음 */
+    section p {
+      color: red;
+      text-decoration: line-through;
+    }
+    section p {
+      color: blue;
+      text-decoration: overline;
+    }
+
+    /* 아이디의 우선요소가 제일 높음*/
+
+    #best {
+      color: red;
+      text-decoration: underline;
+    }
+    article .review{
+      color: blue;
+    }
+    .review {
+      color: green;
+    }
   </style>
 </head>
 
