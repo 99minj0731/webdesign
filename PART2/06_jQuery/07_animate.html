@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animate</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>animate</title>
-</head>
+  <body>
+    <h1>animate</h1>
+    <h2>Content Title</h2>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+      let title = $("h2");
+      title.animate(
+        {
+          fontSize: "100px",
+        },
+        2000,
+        "easeOutBounce",
+        function () {
+          title.stop(true).animate({ fontSize: "50px" });
+        }
+      );
 
-<body>
-  <h1>animate</h1>
-  <h2>Content Title</h2>
-  <script src="./js/jquery-3.6.1.min.js"></script>
-  <script>
-    let title = $('h2');
-    title.animate({
-      fontSize: '100px'
-    });
-
-
-    /* 도서를 참조하여 옵션을 추가해보세요 */
-  </script>
-</body>
-
+      /* 도서를 참조하여 옵션을 추가해보세요 */
+      // 대상.animate({
+      //   css속성명:값,
+      //   css속성명:값,
+      //   (시간, 속도, 끝나면 할 일);
+      // })
+    </script>
+  </body>
 </html>
