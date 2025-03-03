@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{width: 100%; vertical-align: top;}
+table {width: 100%; border-collapse: collapse;}
+button {cursor: pointer;}
+body {background: #fff; color: #333; font-family: "맑은 고딕";}
+
+.wrap{width: 1000px; height: 650px; display: flex; position: relative;}
+header {width: 200px; background: #0000d5; padding-top: 80px;}
+nav{margin-top: 50px; padding: 20px;}
+nav>ul>li>a{display:block; background: #ffb800; padding:10px 0; text-align: center; color: #fff;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus,
+nav>ul>li.on>a
+{background: #212121; color: #fff;}
+
+.sub li a{display: block; padding: 10px 0; background: #fff; color: #0000d5; text-align: center;}
+.sub li a:hover,
+.sub li a:focus {background: #ccc;color: #fff;}
+.sub {display: none;}
+
+.contents {width: 800px; background: #fcc;}
+.slide{height: 350px; background: tomato; position: relative;}
+.slide ul li {width: 800px; height: 350px; position: absolute; top: 0; left: 0; display: none;}
+.slide ul li a {display: block; height: 100%;}
+.slide ul li.s1{background: url(../img/s1.jpg) no-repeat center/cover; display: block;}
+.slide ul li.s2{background: url(../img/s2.jpg) no-repeat center/cover;}
+.slide ul li.s3{background: url(../img/s3.jpg) no-repeat center/cover;}
+.slide ul li h2{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 213, .5); border-radius: 20px 0 20px 0; padding: 10px 40px; color: #fff; font-size: 30px; width: 600px; text-align: center;}
+.slide ul li h2 span {color: #ffb800; font-weight: bold;}
+
+.con{height: 200px; display: flex;}
+.con1 {width: 300px; position: relative; padding-top: 5px;}
+.con1 .tabmenu{display: flex;}
+.con1 .tabmenu>li{background: #333; color: #fff; padding: 5px 10px; border-radius: 10px 10px 0 0 ;}
+.con1 .tabmenu>li.on {background: #0000d5;}
+.con1 .tabmenu>li h2{font-size: 18px;}
+
+.tabcon {position: absolute; left: 0; width: 100%; top: 39px;}
+
+.notice table {border-top: 3px solid #0000d5;}
+.notice table tr {border-bottom: 1px solid #f7f7f4;}
+.notice table th {text-align-last: left;}
+.notice table th a {padding: 7px; display: block; width: 180px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #333;}
+.notice table td{color: #333;}
+
+.gall ul{display: flex; gap: 10px; justify-content: center; align-items: center; padding-top: 20px; border-top: 3px solid #0000d5;}
+.gall ul li img {width: 90px; height: 120px; object-fit: cover;}
+
+.gall{display: none;}
+
+.con2{background: #fff; width: 300px; padding: 10px;}
+.con2>h2{color: #0000d5; font-size: 20px; margin-bottom: 10px;}
+.con2 a{display: block; height: 130px; background: url(../img/banner.jpg) center/cover; border-radius: 30px; overflow: hidden; color: #fff;}
+.con2 div{background: rgba(0, 112, 190, 0.5); text-align: center; padding: 20px; height: 100%;}
+.con2 div h2{margin-bottom: 10px; color: #ff0;}
+.con2 div p{letter-spacing: -2px; background: #333; display: inline-block; font-size: 18px;padding: 5px;}
+
+.con3 {width: 200px; padding: 10px;}
+.con3 >h2 {color: #0000d5; font-size: 20px; margin-bottom: 10px;}
+.con3>ul{display: flex; gap: 5px; justify-content: center; align-items: center;}
+.con3 ul span{display: block; width: 60px ;height: 60px ; background: #0000d5; text-align: center;padding: 10px; border-radius: 20px; margin-bottom: 10px;}
+.con3 ul li p{font-size: 14px;}
+
+footer{height: 100px; background: #333; display: flex; color: #fff; padding-top: 30px; padding-left: 20px ; gap: 20px;}
+footer .fmenu {display: flex; gap: 10px;}
+footer .fmenu li{border-right: 1px solid #fff; padding-right: 10px; font-size: 14px;}
+footer .fmenu li:last-child{border-right: none;}  
+footer .fcopy {font-size: 14px; margin-top: 5px;}
+
+.popup {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 9999; background: #fff; border-radius: 20px; text-align: center; padding: 20px; display: none;}
+.popup h2{color: #0000d5; margin-bottom: 20px;}
+.popup .button {text-align: right; margin-top: 20px;}
+.popup .button button {background: #0000d5; padding: 10px; border-radius: 10px; color: #fff; font-size: 14px;}
+.popup .text {margin-top: 20px;}
