@@ -8,11 +8,72 @@ table{width: 100%; border-collapse: collapse}
 button{cursor: pointer;}
 body{background: #eeeeee; color: #333; font-family:"맑은 고딕";}
 
-.wrap{height: 950px ;}
+.wrap{height: 950px ; position: relative; min-width: 1200px;}
 .top{height:850px; display: flex;}
-header{width: 200px; background: #c47319;}
+header{width: 200px; background: #c47319; padding: 30px 10px}
+header h1{text-align: center; margin-bottom:30px;}
+nav>ul>li>a {display:block; background: #333; padding: 10px 20px; color: #fff}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus,
+nav>ul>li.on>a{background: #825b12;}
+
+.sub {display: none;}
+.sub li a{display: block; background: #fff; padding: 10px 20px;}
+.sub li a:hover,
+.sub li a:focus{background: #ccc;}
+
+.spot{margin-top:20px; text-align: center; color: #fff;}
+.spot a{font-size: 14px;}
+.spot a:first-child {border-right: 1px solid #fff; padding-right: 5px;}
+
 .contents{width:calc(100% - 200px); background: #369;}
-.slide{height: 400px; background: skyblue;}
-.banner{height:200px; background: #eee;}
-.con{height: 250px; background: #fcc;}
-footer{height:100px; background: #333;}
+.slide{height: 400px; background: skyblue; position: relative; overflow: hidden;}
+.slide ul{position: absolute; top: 0; left: 0; height:1200px; width: 100%;}
+.slide ul li{width: 100%; height: 400px; position: relative;}
+.slide ul li.s1{background: url(../img/s1.jpg) center/cover; }
+.slide ul li.s2{background: url(../img/s2.jpg) center/cover; }
+.slide ul li.s3{background: url(../img/s3.jpg) center/cover; }
+.slide ul li .text{position: absolute; bottom: 20px; left: 20px; color: #fff;}
+.slide ul li .text h2 {font-size: 40px; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); margin-bottom: 10px;}
+.banner{height: 200px; background: #eee;}
+.slide ul li .text p {font-size: 18px;}
+
+.banner{height:200px; background: #eee; padding: 20px;}
+.banner a {display: flex; gap: 20px; align-items: center;}
+.banner .photo{flex-basis: 250px; border-radius: 20px; overflow: hidden; height: 150px;}
+.banner .text {flex-grow: 1;}
+.banner .text ul{margin-top: 20px;}
+
+.con{height: 250px; background: #fcc; position: relative; padding: 20px 50px;}
+.tabmenu {display: flex;}
+.tabmenu>li {width: 150px; background: #333; color: #fff; text-align: center;}
+.tabmenu>li>h2>a{display: block; padding: 10px; font-size: 20px;}
+.tabmenu>li.on{background: #8e5b12;}
+.tabcon {position: absolute; width: 100%;left: 0; padding: 10px 20px;}
+
+
+.notice table tr{border-bottom: 1px  solid #c47319 ;}
+.notice table th{text-align: left; padding-left: 20px; color: #fff; height: 35px;}
+.notice table td{text-align: center; color: #fff;}
+
+
+.gall{display: none;}
+.gall ul{display: flex; gap: 20px; justify-content: center;}
+.gall ul li img{width: 300px; height:140px; object-fit: cover;} 
+
+.go{position:fixed; top: 20px; right: 10px; background: #c47319; padding: 20px; border-radius:20px ; text-align: center; color: #fff;}
+.go li{margin-bottom:20px;}
+.go li a{display:block; height:100%;}
+.go li:last-child{margin-bottom:0px;}
+.go span{display:block; margin-top: 20px;}
+
+footer{height:100px; background: #333; color: #fff; position: relative; display: flex; gap: 50px; align-items: center; padding-left: 20px;}
+footer .sns {position: absolute; top: 40px; right:40px; display: flex; gap:10px;}
+footer .sns li a{display: block; width:30px; height: 30px; background: #fff; border-radius: 50%; text-align: center; padding-top: 10px;}
+footer .sns li:nth-child(1) a{background: #3c5b9a;}
+footer .sns li:nth-child(2) a{background: #47b749;}
+footer .sns li:nth-child(3) a{background: red;}
+
+
+.popcon {display: none;}
+.popcon {position: absolute; width:500px; background-color: #fff; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; border-radius: 20px; padding: 10px; z-index: 9999;}
