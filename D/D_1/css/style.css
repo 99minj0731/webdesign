@@ -58,6 +58,7 @@ nav>ul>li.on>a{background: #825b12;}
 
 
 .gall{display: none;}
+.gall a{display: block}
 .gall ul{display: flex; gap: 20px; justify-content: center;}
 .gall ul li img{width: 300px; height:140px; object-fit: cover;} 
 
