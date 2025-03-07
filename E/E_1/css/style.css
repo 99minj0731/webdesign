@@ -17,6 +17,7 @@ nav>ul>li>a{background: #70190f; display: block; padding: 10px 0; text-align: ce
 nav>ul>li:hover>a,
 nav>ul>li>a:focus,
 nav>ul>li.on>a{background: #333;}
+.sub{display: none;}
 .sub li a{background: #fff; display: block; text-align: center; padding: 5px 0;}
 .sub li a:hover,
 .sub li a:focus{background: #d7322d; color: #fff;}
