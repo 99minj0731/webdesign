@@ -10,7 +10,7 @@ body{width: 100%; background: #eee; color: #666;}
 
 .wrap{position: relative;}
 header{width: 1340px; margin: auto; height: 100px; background: #fc6; padding-top: 20px; position: relative;}
-nav{position: absolute; top: 60px; right: 0px;}
+nav{position: absolute; top: 60px; right: 0px; z-index: 44;}
 nav>ul{display: flex;}
 nav>ul>li>a{display: block; width: 160px; text-align: center; padding: 10px 0; color: #fff; background: #28427f;}
 nav>ul>li:hover>a,
