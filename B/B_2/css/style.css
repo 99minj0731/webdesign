@@ -14,13 +14,13 @@ header .inner{width: 1200px; height: 100%; display: flex; align-items: center; p
 .inner>h1>a>img {width: 200px; height: 40px; margin-left: 50px;}
 .inner nav>ul {display: flex; position: absolute; top: 53px; right: 0;}
 nav>ul>li>a{display: block; width: 150px; background: skyblue; padding: 10px; color: #fff; text-align: center; font-weight: bold; font-size: 20px; }
-.sub a {display: block; text-align: center; padding: 10px; font-size: 20px; background: #fff;}
-header>nav>ul>li>a:hover,
-header>nav>ul>li>a:focus,
-header>nav>ul>li>a.on {background: rgb(69, 169, 208);}
+.sub{position: absolute; z-index: 22; width: 150px; display: none;}
+.sub a {display: block; text-align: center; padding: 10px; font-size: 20px; background: #fff; }
+nav>ul>li>a:hover,
+nav>ul>li>a:focus,
+nav>ul>li.on>a {background: rgb(69, 169, 208);}
 .sub>li>a:hover,
 .sub>li>a:focus{background: rgb(185, 235, 255); color: #747474;}
-.sub{display: none;}
 
 .slide {width: 1200px; height: 300px; background: #efefef; margin: 0 auto; position: relative; overflow: hidden;}
 .slide > ul { width: 3600px; position: absolute; top: 0; left: 0;}
