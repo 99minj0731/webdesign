@@ -8,9 +8,11 @@ img {vertical-align: top; max-width: 100%;}
 button {cursor: pointer;}
 body {background: #ffffff; color: #333333; font-family: "맑은 고딕";}
 
-header{width: 1200px; height: 100px; background: rgb(80, 80, 255); margin: 0 auto; padding-top: 25px; padding-left: 30px; display: flex; position: relative;}
-header>h1>a>img {width: 200px; height: 40px;}
-nav>ul {display: flex; position: absolute; top: 53px; right: 0;}
+.wrap {position: relative;}
+header{width: 100%; height: 100px; background: rgb(80, 80, 255); margin: 0 auto; position: relative; align-items: center; display: flex; justify-content: center;}
+header .inner{width: 1200px; height: 100%; display: flex; align-items: center; position: relative;}
+.inner>h1>a>img {width: 200px; height: 40px; margin-left: 50px;}
+.inner nav>ul {display: flex; position: absolute; top: 53px; right: 0;}
 nav>ul>li>a{display: block; width: 150px; background: skyblue; padding: 10px; color: #fff; text-align: center; font-weight: bold; font-size: 20px; }
 .sub a {display: block; text-align: center; padding: 10px; font-size: 20px; background: #fff;}
 header>nav>ul>li>a:hover,
@@ -49,4 +51,13 @@ table tr th{padding-bottom: 3px;}
 .go ul li {justify-content: center; align-items: center; background-color:rgb(80, 80, 255); padding: 20px; border-radius: 10px;}
 .go ul li p{margin-top: 10px; font-size: 20px; font-weight: bold; color: #fff;}
 
-footer {width: 1200px; height: 100px; background: #c5c5c5; margin: 0 auto;}
+footer {width: 100%; height: 100px; background: skyblue; margin: 0 auto; display: flex; align-items: center; justify-content: center;}
+.innercon {width: 1200px; display: flex; align-items: center; justify-content: space-between; padding-left: 50px;}
+.familysite { display: flex; flex-direction: column; gap: 10px; align-items: center;}
+.sns {display: flex; gap: 20px;}
+.familysite .sns a{width: 40px; height: 40px; display: block; background: #333; padding: 10px; text-align: center; border-radius: 50%;}
+.familysite .sns a img {margin-top: 5px;}
+
+.popup {position: absolute; background: #fff; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; padding: 30px; border-radius: 10px; display: none;}
+.popup img {margin: 10px;}
+button {padding: 10px; margin: 20px;}
