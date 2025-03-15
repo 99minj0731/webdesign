@@ -1,11 +1,11 @@
 $(function(){
   //키보드 메뉴
   $("nav>ul>li").focusin(function(){
-    $(this).find(".sub").slideDown()
+    $(this).find(".sub").stop().slideDown()
     $(this).addClass("on")
   })
   $(".sub>li:last-child>a").focusout(function(){
-    $(".sub").slideUp()
+    $(".sub").stop().slideUp()
     $("nav>ul>li").removeClass("on")
   })
   $("nav>ul>li").focusout(function(){
@@ -30,6 +30,9 @@ $(function(){
   //사이드바
   $("nav>ul>li").mouseenter(function(){
     $(this).find(".sub").stop().slideDown()
+  })
+  $(".sub>li").mouseenter(function(){
+    $(this).closest("li").addClass("on")
   })
   $("nav>ul>li").mouseleave(function(){
     $(this).find(".sub").stop().slideUp()
