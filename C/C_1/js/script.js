@@ -10,7 +10,7 @@ $(function(){
     $("nav>ul>li").removeClass("on")
   })
 
-  //탭메뉴
+  //탭메뉴    
   let t = 0
   $(".tabmenu>li").click(function(){
     $(".tabmenu>li").removeClass("on")

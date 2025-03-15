@@ -26,7 +26,7 @@ header .sub li{background: #fff; padding: 10px; font-size: 20px;}
 
 .contents{width: 800px; height: 100%; }
 .slides{position: relative; width: 800px;height: 350px; display: flex;}
-.slides>ul>li{position: absolute; width: 800px; height: 350px; display: none;}
+.slides>ul>li{position: absolute; width: 800px; height: 350px;}
 .slides>ul>li a{display: block; height: 100%; }
 .slides>ul>li h2{color: #fff; text-align: center; margin-top: 150px; font-size: 50px;}
 .slides .s1{background: url(../img/s1.jpg) no-repeat center/cover;}
