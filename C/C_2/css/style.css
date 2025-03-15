@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box; }
+li{list-style: none;}
+a{color: inherit; text-decoration: none;}
+img{vertical-align: top; max-width: 100%;}
+table{width: 100%; border-collapse: collapse;}
+button{cursor: pointer;}
+body{color: #333; background: #fff; font-family: "맑은 고딕";}
+
+.wrap {display: flex; width: 1000px; height: 650px; position: relative;}
+header{width: 200px;height: 100%;display: flex; flex-direction: column; align-items: center;}
+.logo{margin-top: 30px; margin-bottom: 100px;}
+header>nav>ul{text-align: center;}
+header>nav>ul>li>a {display: block; background: rgb(243, 153, 243); width: 150px; padding: 10px; font-size: 25px; color: purple;}
+header>nav>ul>li>a:hover,
+header>nav>ul>li>a:focus,
+header>nav>ul>li.on>a
+ {background: rgb(201, 76, 201); color: #fff;}
+.sub{display: none;}
+.sub>li>a{display: block;}
+.sub>li:hover,
+.sub>li:focus-within
+ {background: pink;}
+header .sub li{background: #fff; padding: 10px; font-size: 20px;}
+
+.contents{width: 800px; height: 100%; }
+.slides{position: relative; width: 800px;height: 350px; display: flex;}
+.slides>ul>li{position: absolute; width: 800px; height: 350px; display: none;}
+.slides>ul>li a{display: block; height: 100%; }
+.slides>ul>li h2{color: #fff; text-align: center; margin-top: 150px; font-size: 50px;}
+.slides .s1{background: url(../img/s1.jpg) no-repeat center/cover;}
+.slides .s2{background: url(../img/s2.jpg) no-repeat center/cover;}
+.slides .s3{background: url(../img/s3.jpg) no-repeat center/cover;}
+
+.con{width: 100%;height: 200px; display: flex;}
+.con .notice {width: 250px; height: 100%;}
+.notice>a {display: block;width: 120px; padding: 10px ;  background: rgb(243, 153, 243)}
+.notice th {text-align: left; padding: 5px;}
+.notice tr {border-bottom: 1px solid #e1e1e1;}
+
+.con .gall {width: 300px; height: 100%;}
+.gall>a {display: block;width: 120px; padding: 10px ;  background: rgb(243, 153, 243)}
+.gall ul{display: flex; margin: 20px 5px;gap: 10px;}
+
+.con .go {width: 250px;height: 100%;}
+.go>a {display: block; width: 120px; padding: 10px ; }
+.go>ul {display: flex;gap: 10px; text-align: center; justify-content: center;margin-top: 20px;}
+.go img{margin-bottom: 10px; background: rgb(201, 76, 201); padding: 15px; border-radius: 5px;}
+.go p {color: #949494;}
+
+footer{ width: 100%; height: 100px; background: pink; display: flex; align-items: center; justify-content: space-between;}
+footer .copy{font-size: 8px; margin-left: 50px;}
+footer .snsicons{text-align: center; gap: 20px;}
+footer .snsicons ul {display: flex; gap: 40px;}
+footer .snsicons ul li:first-child {background: green; width: 40px;height: 40px;padding-top: 15px; border-radius: 50%;}
+footer .snsicons ul li:nth-child(2) {background: blue; width: 40px;height: 40px;padding-top: 15px; border-radius: 50%;}
+footer .snsicons ul li:nth-child(3) {background: red; width: 40px;height: 40px;padding-top: 15px; border-radius: 50%;}
+footer .sns{margin-right: 50px; display: flex; flex-direction: column;gap: 10px;}
+
+.popup {display: none; border-radius: 20px; position: absolute; background: #fff;padding: 30px; text-align: center; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.popup img{margin: 20px 0; height: 300px;}
+button{margin: 20px; padding: 10px;}
