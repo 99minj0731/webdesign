@@ -17,16 +17,15 @@ header>nav>ul>li>a:hover,
 header>nav>ul>li>a:focus,
 header>nav>ul>li.on>a
 {background: rgb(255, 243, 187); color: #8f8f8f;}
-.sub {position: absolute; left: 200px; background: #fff;}
+.sub {position: absolute; left: 200px; background: #fff; z-index: 9999;}
 .sub>li>a{display: block; width: 130px; padding: 10px; z-index: 9999;} 
 .sub>li>a:hover {background: rgb(255, 243, 187)}
 .sub {display: none;}
 
 .contents {width: 800px; height: 100%; background: #fff;}
 
-.contents .slides {width: 100%; height: 350px; position: relative; overflow: hidden;}
-.slide {position: absolute; top: 0; left: 0; width: 1400px;}
-.slide ul {display: flex;}
+.contents .slides {width: 100%; height: 350px; position: relative; overflow: hidden; }
+.slide ul {display: flex; position: absolute; top: 0; left: 0; width: 1400px;}
 .slide ul li a {display: block; width: 800px; height: 350px;}
 .slide>ul>.s1>a{background: url("../img/s1.jpg") no-repeat center/cover;}
 .slide>ul>.s2>a{background: url("../img/s2.jpg") no-repeat center/cover;}
