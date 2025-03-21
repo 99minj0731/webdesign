@@ -6,7 +6,7 @@ $(function() {
   })
   $(".sub>li:last-child").focusout(function(){
     $(".sub").slideUp()
-    $("nav>ul>li").removeClass("on")
+    $("nav>ul>li").removeClass()
   })
 
   //Slide
