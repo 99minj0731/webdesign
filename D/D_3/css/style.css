@@ -25,7 +25,7 @@ nav>ul>li.on>h2>a
  {background: rgb(185, 238, 185); color: #333;}
 nav>ul>li>h2>a {display: block; width: 200px; background: rgb(22, 204, 22); text-align: center; padding: 10px 5px;}
 .sub {display: flex; background: rgba(0, 0, 0, .5); width: 100%;}
-.sub a {display: block; width: 100px; text-align: center;margin-top: 13px;}
+.sub>li>a {display: block; width: 100px; text-align: center;margin-top: 13px;}
 .sub>li:hover,
 .sub>li>a:focus
 {background: rgb(218, 218, 218); color: #333;}
