@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {color: inherit; text-decoration: none;}
+table {width: 100%; border-collapse: collapse;}
+img {max-width: 100%; vertical-align: top;}
+button {cursor: pointer; padding: 20px; border-radius: 10px; font-size: 30px; border: none; background: green; color: #fff;}
+body {background: #ffffff; color: #fff; font-family: "맑은 고딕";}
+
+.wrap{position: relative; width: 100%; height: 970px; min-width: 1800px;}
+
+.top {width: 100%; height: 850px; display: flex;}
+.top header {width: 200px;height: 100%;}
+header h1 {margin-top: 20px; margin-bottom: 30px;}
+header .spotMenu {display: flex;margin-top: 300px;}
+.spotMenu a{display: block; width: 100px; height: 20px; text-align: center; color: #333;}
+.login {border-right: 1px solid #333;}
+
+nav {position: absolute; width: 100%; top: 100px; z-index: 100;}
+nav>ul>li {display: flex;}
+nav>ul>li>h2>a:hover,
+nav>ul>li>h2>a:focus,
+nav>ul>li.on>h2>a
+ {background: rgb(185, 238, 185); color: #333;}
+nav>ul>li>h2>a {display: block; width: 200px; background: rgb(22, 204, 22); text-align: center; padding: 10px 5px;}
+.sub {display: flex; background: rgba(0, 0, 0, .5); width: 100%;}
+.sub a {display: block; width: 100px; text-align: center;margin-top: 13px;}
+.sub>li:hover,
+.sub>li>a:focus
+{background: rgb(218, 218, 218); color: #333;}
+.sub{display: none;}
+
+.top .contents {width: calc(100% - 200px); height: 100%;position: relative;}
+.contents .slides {width: 100%; height: 400px; background: thistle;}
+.slides .slide {width: 100%; height: 100%;}
+.slide>ul {width: 100%; height: 100%;}
+.slide>ul>li {width: 100%; height: 400px; position: absolute;}
+.slide>ul>li>a {display: block; text-align: center; background: rgba(0, 0, 0, 0.5); padding: 10px; font-size: 30px; width: 1000px; margin: 0 auto; border-radius: 30px;}
+.slide>ul>li.s1 {background: url("../img/s1.jpg") no-repeat center/cover; }
+.slide>ul>li.s2 {background: url("../img/s2.jpg") no-repeat center/cover; }
+.slide>ul>li.s3 {background: url("../img/s3.jpg") no-repeat center/cover; }
+
+.go {position: absolute; width: 200px; right: 0; top: 0; height: 300px; z-index: 80; background: green;}
+.go a{display: block;}
+.go>a>p {text-align: center; font-size: 20px; padding: 20px; font-weight: bold;}
+.go .icons a {display: block; width: 100%; text-align: center; padding: 10px;}
+.icons a img {margin-bottom: 5px;}
+
+.banner {width: 100%; height: 200px; background: rgb(26, 230, 26); display: flex; color: #fff; align-items: center;}
+.banner a {display: block;}
+.banner>.img {width: 10%;}
+.banner .BText {width: 80%; text-align: center; font-size: 25px;}
+.BText>a {margin-top: 10px;}
+.banner>.arrow {width: 10%; }
+
+.con {width: 100%; height: 250px; color: #333; position: relative;}
+.con h2 a{display: block; background: greenyellow; width: 200px; text-align: center; padding: 10px 0; color: #333;}
+.notice {height: 200px;}
+tr th {padding: 10px;}
+tr { border-bottom: 1px solid #333;}
+
+.con ul {display: flex;}
+.tabcon {position: absolute; left: 0; width: 100%;}
+.gall {display: flex; gap: 20px; padding: 10px; text-align: center; display: none; }
+.gall a {display: block;}
+.gall>a>img {width: 220px;border-radius: 10px;}
+.con>ul>li.on>h2>a{background: rgb(3, 61, 3); color: #fff;}
+
+footer {width: 100%; height: 120px; background: #333; display: flex; align-items: center;}
+footer .fright {margin-left: 50px; padding: 20px; display: flex; flex-direction: column; gap: 20px;}
+.fright .Fmenu {display: flex;}
+.Fmenu a{display: block; width: 200px; text-align: center; border-right: 1px solid #fff;}
+.Fmenu a:last-child{border: none;}
+.copy a {display: block; text-align: center; font-size: 12px;}
+
+.popup{background: #fff; width: 500px; padding: 20px; text-align: center; display: flex; flex-direction: column;gap: 20px; border-radius: 50px; color: #333; position: absolute; z-index: 9999; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 3px solid #333; display: none;}
+.popup .ptitle {font-size: 20px; font-weight: bold;}
