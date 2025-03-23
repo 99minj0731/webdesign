@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {color: inherit; display: block; text-decoration: none;}
+table {width: 100%; border-collapse: collapse;}
+img {max-width: 100%; vertical-align: top;}
+body {background: #fff; color: #333; font-family: "맑은 고딕";}
+button {cursor: pointer; padding: 20px; border: none; background: #f04467; font-size: 20px; color: #fff; border-radius: 10px; margin-top: 50px}
+
+.wrap {width: 100%; margin: 0 auto; height: 1070px;}
+header {width: 1340px; height: 100px; background: linen; margin: 0 auto; display: flex; align-items: center; position: relative;}
+header>h1>a {text-align: center;}
+nav>ul {display: flex; position: absolute; text-align: center; top: 49px; right: 20px; z-index: 999;}
+nav>ul>li>a {background: #0a9b97; width: 150px; text-align: center; padding: 10px; color: #fff;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus,
+nav>ul>li.on>a {background: #f04467;}
+.sub>li>a { padding: 5px; color: #fff; font-size: 20px;}
+.sub>li:hover>a,
+.sub>li>a:focus {background: #333;}
+.submenu {width: 100%; height: 200px; background: rgba(0, 0, 0, 0.5); position: absolute; top: 100px;}
+.sub, .submenu {display: none;}
+
+
+.slides {width: 100%; height: 350px; background: lawngreen; text-align: center;}
+.slide {width: 100%; height: 100%; position: relative; overflow: hidden;}
+.slide ul {position: absolute; width: calc(100% * 3); height: 100%; top: 0; left: 0; display: flex;}
+.slide ul li {width: 100%; height: 100%; color: #fff;}
+.slide ul li p {font-size: 50px; margin-top: 100px;}
+.slide ul li.s1 {background: url("../img/s1.jpg") no-repeat center/cover;}
+.slide ul li.s2 {background: url("../img/s2.jpg") no-repeat center/cover;}
+.slide ul li.s3 {background: url("../img/s3.jpg") no-repeat center/cover;}
+
+
+.contents {width: 1340px; height: 600px; background: linen; margin: 0 auto; position: relative; top: -100px;}
+.contents .go {width: 100%; height: 100px; padding: 10px;}
+.go ul {display: flex; justify-content: center; align-items: center; gap: 50px;}
+.go>ul>li {text-align: center; border: 3px solid #0a9b97; background: #f04467; border-radius: 10px; justify-content: center; width: 80px; height: 80px; padding-top: 10px;}
+.go>ul>li img {width: 50%; height: auto;}
+.go p {font-size: 12px; padding-top: 5px;} 
+
+.contents .banner {width: 100%; height: 200px; background: #0a9b97; display: flex; justify-content: space-evenly; padding: 10px; text-align: center; align-items: center; color: #fff;}
+.banner .bannerimg>img {width: 150px; height: 80%;}
+.banner .btexts .bannertitle {font-size: 30px; font-weight: bold; margin-bottom: 20px; background: #fff; padding: 5px; border-radius: 10px; color: #0a9b97;}  
+.arrow img {width: 100px;}
+
+.contents .con {width: 100%; height: 300px; position: relative;}
+.con ul {display: flex;}
+.con h3 {background: #f04467;width: 200px; text-align: center; padding: 10px; font-size: 30px; color: #fff;}
+.tabcon {position: absolute; top: 80px; left: 0;}
+table tr {border-bottom: 1px solid #0a9b97;}
+table tr th a {padding: 10px; font-size: 20px; width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.con>ul>li.on>h3 {background: #a00625;}
+.gall {display: flex; gap: 20px; text-align: center;}
+.gall img {width: 300px; height: 180px; margin-bottom: 10px; border-radius: 10px;}
+/* .notice {display: none;} */
+.gall {display: none;}
+
+footer {width: 1340px; height: 120px; background: rgb(54, 54, 54); margin: 0 auto; position: relative; top: -100px; display: flex;}
+footer .flogo {width: 300px;}
+.flogo a {text-align: center; margin-top: 40px;}
+
+.ftexts {height: 100%; text-align: center;}
+.fgo {height: 60px}
+.ftexts .fgo ul {display: flex; width: 1040px; height: 50%; height: 60px;}
+.fgo ul li a {width: 150px; color: #fff; padding: 0 10px; margin-top: 20px; margin-left: 20px; border-right: 1px solid #fff;}
+.fgo ul li:last-child a {border: none;}
+.copy {height: 50%; color: #fff;}
+
+
+.popup {display: none; background: #fff; width: 400px; text-align: center; padding: 20px; border-radius: 20px;
+transform: translate(-50%, -50%); position: absolute; top: 50%; left: 50%; border: 5px solid #f04467;}
+.popup p{margin: 10px; }
+.popup img {margin: 20px;}
+.popup p:first-child {font-size: 17px; font-weight: bold;}
