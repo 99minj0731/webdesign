@@ -19,7 +19,7 @@ nav>ul>li.on>a {background: #f04467;}
 .sub>li>a { padding: 5px; color: #fff; font-size: 20px;}
 .sub>li:hover>a,
 .sub>li>a:focus {background: #333;}
-.submenu {width: 100%; height: 200px; background: rgba(0, 0, 0, 0.5); position: absolute; top: 100px;}
+.submenu {width: 100%; height: 200px; background: rgba(0, 0, 0, 0.5); position: absolute; top: 100px; z-index: 100;}
 .sub, .submenu {display: none;}
 
 
@@ -54,6 +54,7 @@ table tr th a {padding: 10px; font-size: 20px; width: 500px; white-space: nowrap
 .con>ul>li.on>h3 {background: #a00625;}
 .gall {display: flex; gap: 20px; text-align: center;}
 .gall img {width: 300px; height: 180px; margin-bottom: 10px; border-radius: 10px;}
+.gall img:hover {opacity: 30%;}
 /* .notice {display: none;} */
 .gall {display: none;}
 
